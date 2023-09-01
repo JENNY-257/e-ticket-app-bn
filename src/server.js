@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import userRouter from '../src/routes/userRoutes.js';
+import router from './routes/eventRoutes.js';
 
 dotenv.config();
 const app = express();
@@ -24,7 +25,7 @@ db.once('open', () => {
 app.use(express.json());
 
 app.use('/api/v1/users', userRouter);
-
+app.use('/api/v1/events',router);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
