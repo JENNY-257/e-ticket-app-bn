@@ -1,23 +1,5 @@
-# Dependency directories
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Environment variables
+node_modules
 .env
-
-# OS or Editor files
-.DS_Store
-Thumbs.db
-.vscode/
-*.sublime-project
-*.sublime-workspace
-
-# Logs and backups
-*.log
-*.bak
-*.swp
-
-# Output files
+yarn.lock
+package-lock.json
 dist/
-build/
