@@ -14,7 +14,7 @@ import { validateEventCreation, validateEventUpdate } from '../validations/event
 
 const router = express.Router();
 
-router.post('/event',  validateEventCreation, createEvent);
+router.post('/create-event',  validateEventCreation, createEvent);
 router.patch('/:eventId', validateEventUpdate, updateEvent);
 router.delete('/:eventId', deleteEvent);
 router.get('/:eventId', getEventById);
